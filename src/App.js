@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from './components/Home';
+import NavBar from './components/NavBar';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import CreateTask from './components/CreateTask';
+import TaskDetails from './components/TaskDetails';
 
 function App() {
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <NavBar />
+      <div className="content">
+       <Switch>  {/** Switch component make sure only one route visible at any one time */}
+         <Route exact path='/'>
+            <Home />
+         </Route>
+         <Route path='/create'>
+            <CreateTask />
+         </Route>
+         <Route path='/tasks/:id'>
+            <TaskDetails />
+         </Route>
+       </Switch>
+        
+      </div>
     </div>
+    </Router>
   );
 }
 
