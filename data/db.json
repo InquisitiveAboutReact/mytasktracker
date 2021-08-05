@@ -1,17 +1,34 @@
 {
-	"tasks": [
-		{ "id": 1, "title": "Go to the market", "taskDesc": "Go there by 9.30 am" },
-
-		{ "id": 2, "title": "Buy Milk", "taskDesc": "Buy only Amul products" },
-		{
-			"id": 3,
-			"title": "Complete the development task",
-			"taskDesc": "You have to use MERN stack"
-		},
-		{
-			"id": 4,
-			"title": "Pack your bags",
-			"taskDesc": "Be on the train station on 25th by 10.30 pm"
-		}
-	]
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Go to the market",
+      "taskDesc": "Go there by 9.30 am"
+    },
+    {
+      "id": 2,
+      "title": "Buy Milk",
+      "taskDesc": "Buy only Amul products"
+    },
+    {
+      "id": 3,
+      "title": "Complete the development task",
+      "taskDesc": "You have to use MERN stack"
+    },
+    {
+      "id": 4,
+      "title": "Pack your bags",
+      "taskDesc": "Be on the train station on 25th by 10.30 pm"
+    },
+    {
+      "title": "Stand up meeting @4 PM ",
+      "taskDesc": "Need to attend the stand up meeting on 14th Aug at 4 PM",
+      "id": 5
+    },
+    {
+      "title": "Movie night",
+      "taskDesc": "Go to Kong vs Godzilla on 15th Aug",
+      "id": 6
+    }
+  ]
 }

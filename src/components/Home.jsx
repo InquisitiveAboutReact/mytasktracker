@@ -2,13 +2,10 @@ import React from "react";
 import TaskList from "./TaskList";
 import useFetch from '../customhooks/useFetch'
 
+
 const Home = () => {
-	const {tasks, setTasks, isLoading, error} = useFetch(" http://localhost:5000/tasks");
-
-	const handleDelete = (id) => {
-		setTasks(tasks.filter((task) => task.id !== id));
-	};
-
+	const {tasks, isLoading, error} = useFetch(" http://localhost:5000/tasks");
+	
 	return (
 		<div>
 			<div className="home">
@@ -47,7 +44,7 @@ const Home = () => {
         will not recognize for tasks 
         Error: TypeError: Cannot read property 'map' of null
         */}
-				{tasks && <TaskList tasks={tasks} handleDelete={handleDelete} />}
+				{tasks && <TaskList tasks={tasks} />}
 			</div>
 		</div>
 	);
