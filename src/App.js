@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import CreateTask from './components/CreateTask';
 import TaskDetails from './components/TaskDetails';
+import NotFoundPage from './components/NotFoundPage';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
          </Route>
          <Route path='/tasks/:id'>
             <TaskDetails />
+         </Route>
+         <Route path='*'>
+            <NotFoundPage />
          </Route>
        </Switch>
         
