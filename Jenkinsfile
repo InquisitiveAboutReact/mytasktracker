@@ -11,6 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing your application..'
+                echo 'Jenkins testing sucessfully... '
             }
         }
         stage('Deploy') {
