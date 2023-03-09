@@ -17,6 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying your application....'
+                echo 'Running jenkins inside deploy section of my application....'
             }
         }
     }
