@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building your application..'
+                echo 'Jenkins running sucessfully... '
             }
         }
         stage('Test') {
